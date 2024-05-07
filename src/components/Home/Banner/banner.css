@@ -1,0 +1,63 @@
+.Banner{
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.banner-container{
+    height: 100%;
+    width: 100%;
+}
+
+.inside-banner-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* Image containers */
+
+
+/* np - image  */
+.np-main-icon-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.np-main-icon-img{
+    width: 15%;
+}
+.np-main-icon-title{
+    font-family: 'RegularMain';
+    /* font-size: 22px; */
+    font-size: clamp(1.2rem, 0.2774rem + 0.9536vw, 2.326rem);
+    margin: 10px 0px;
+}
+
+
+/* cafe - image */
+.second-banner-image-container{
+    height: max-content;
+    width: 100%;
+    position: relative;
+    bottom: 80px;
+}
+.cheif-cafe-img{
+    width: 100%;
+}
+
+@media  screen and (max-width:1024px) {
+    .second-banner-image-container{
+        height: max-content;
+        width: 100%;
+        position: relative;
+        bottom: 0px;
+    }
+}

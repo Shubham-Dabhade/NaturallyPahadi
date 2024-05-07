@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "RegularMain";   /*Can be any text*/
+  src: local("ArgestaText-Regular"), url("./fonts/ArgestaText-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bould";   /*Can be any text*/
+  src: local("bould-light-webfont"), url("./fonts/bould-light-webfont.ttf") format("truetype");
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Bould";
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@media screen and (min-width:1200px) {
+  body{
+    padding: 0px 200px;
+    /* background: #F6F5F2; */
+  }
+}
+
+@media screen and (min-width:800px) {
+  body{
+    padding: 0px 100px;
+    /* background: #F6F5F2; */
+  }
+}
+
+@media screen and (max-width:800px) {
+  body{
+    padding: 0px 50px;
+    /* background: #F6F5F2; */
+  }
+}
+
+@media screen and (max-width:400px) {
+  body{
+    padding: 0px 10px;
+    /* background: #F6F5F2; */
+  }
+}
+
