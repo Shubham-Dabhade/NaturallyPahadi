@@ -23,7 +23,8 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    width: 65%;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .aboutus-top-container-title{
@@ -114,6 +115,9 @@
 }
 
 @media screen and (max-width:1149px){
+    .aboutus-top-container{
+        margin-bottom: 0px;
+    }
     .cheif-png{
         height: 250%;
         width: 250%;

@@ -1,0 +1,150 @@
+#ContactUs{
+    height: 100%;
+    width: 100%;
+    margin: 30px 0px;
+    user-select: none;
+}
+
+.inside-contactus-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contactus-left-container{
+    flex: 1;
+
+}
+.contactus-left-img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 10%;
+    z-index: 10;
+}
+
+.contactus-right-container{
+    flex:2;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.contactus-right-img{
+    height: 110%;
+    width: 110%;
+    position: relative;
+    left: -10%;
+}
+
+.contactus-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 80%;
+}
+
+.contact-li{
+    margin: 7px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-li label{
+    width:max-content;
+    white-space: nowrap;
+}
+
+#checkbox{
+    width: max-content;
+    margin-right: 20px;
+}
+.checkbox-li{
+    margin-top: 20px;
+}
+.checkbox-label{
+    width: 130%;
+    white-space: wrap !important;
+}
+.contact-li input{
+    background:none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.519);
+    width: 100%;
+    margin-left: 10px;
+}
+.contact-li input:focus{
+    outline: none;
+}
+
+.contactus-form-button{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+.contactus-form-button:hover{
+    background-color: #043d2b;
+}
+
+@media screen and (max-width: 1426px) {
+    .contactus-form-button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1426px) {
+    .contactus-form-button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .contactus-left-container{
+        display: none;
+    }
+    .contactus-right-img{
+        height: 100%;
+        width: 100%;
+        left: 0px;
+    }
+    .contact-li{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .contactus-right-img{
+        height: 120%;
+        width: 120%;
+        left: -10%;
+        display: none;
+    }
+    .contactus-form{
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: translate(0px, 0px);
+        padding: 20px;
+        background: #F3E9D7;
+        border-radius: 20px;
+    }
+    .contactus-form-button{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
